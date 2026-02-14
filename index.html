@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- ✅ Fix: Permissions Policy para sa accelerometer errors -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=self, gyroscope=self, deviceorientation=self">
+
+    <title>Valentine Invitation ❤️</title>
+
+    <link rel="icon" href="resources/fav.gif">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<section>
+
+    <!-- ✅ Video Background -->
+    <div class="video-background">
+        <video 
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            preload="auto"
+            poster="resources/fallback.jpg"
+        >
+            <source src="resources/heart1.mp4" type="video/mp4">
+            <source src="resources/heart1.webm" type="video/webm">
+        </video>
+    </div>
+
+    <!-- ✅ Main Container -->
+    <div class="container">
+
+        <div class="image-box">
+
+            <div class="actual-image">
+                <img 
+                    src="resources/catheart.gif" 
+                    alt="cute gif" 
+                    class="gif" 
+                    id="gif"
+                    loading="eager"
+                >
+            </div>
+
+            <div class="text-one">
+                <p id="text">Will you be my Valentine? ❤️😘</p>
+            </div>
+
+        </div>
+
+        <div class="yes-no">
+            <button class="yes" id="yes">Yes</button>
+            <button class="no" id="no">No</button>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="./js/app.js"></script>
+
+</body>
+</html>
