@@ -60,7 +60,7 @@ yes.addEventListener("click", () => {
 
   gif.src = "idc.gif";
   text.innerHTML = "Knew it babe 😘";
-
+  yes.innerHTML ="Message me";
   yes.style.height = "90%";
   yes.style.width = "96%";
   no.style.display = "none";
