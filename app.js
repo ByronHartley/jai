@@ -12,12 +12,12 @@ if (!yes || !no || !gif || !text) {
 
 // preload gifs
 [
-  "resources/catheart.gif",
-  "resources/resure.gif",
-  "resources/shocked1.gif",
-  "resources/sad1.gif",
-  "resources/sad2.gif",
-  "resources/idc.gif",
+  "catheart.gif",
+  "resure.gif",
+  "shocked1.gif",
+  "sad1.gif",
+  "sad2.gif",
+  "idc.gif",
 ].forEach(src => {
   const img = new Image();
   img.src = src;
@@ -25,21 +25,21 @@ if (!yes || !no || !gif || !text) {
 
 no.addEventListener("click", () => {
   if (count === 2) {
-    gif.src = "resources/resure.gif";
+    gif.src = "resure.gif";
     text.innerHTML = "You meant to press YES right?🤨";
     yes.style.height = "65%";
     yes.style.width = "60%";
     no.style.width = "30%";
     count++;
   } else if (count === 3) {
-    gif.src = "resources/shocked1.gif";
+    gif.src = "shocked1.gif";
     text.innerHTML = "Your hand must have slipped right?🥹";
     yes.style.height = "70%";
     yes.style.width = "70%";
     no.style.width = "20%";
     count++;
   } else if (count === 4) {
-    gif.src = "resources/sad1.gif";
+    gif.src = "sad1.gif";
     text.innerHTML = "I'm gonna cry😭";
     yes.style.height = "80%";
     yes.style.width = "80%";
@@ -47,7 +47,7 @@ no.addEventListener("click", () => {
     no.style.width = "10%";
     count++;
   } else if (count === 5) {
-    gif.src = "resources/sad2.gif";
+    gif.src = "sad2.gif";
     text.innerHTML = "Pretty Please🥺😘";
     yes.style.height = "90%";
     yes.style.width = "96%";
@@ -58,7 +58,7 @@ no.addEventListener("click", () => {
 yes.addEventListener("click", () => {
   if (vid) vid.style.display = "block";
 
-  gif.src = "resources/idc.gif";
+  gif.src = "idc.gif";
   text.innerHTML = "Knew it babe 😘";
 
   yes.style.height = "90%";
